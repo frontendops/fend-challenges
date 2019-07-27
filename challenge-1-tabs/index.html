@@ -1,10 +1,10 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Progress navigation</title>
-    <link rel="stylesheet" href="app.css">
-</head>
-<body class="container">
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body class="container">
     <!--
         Create Tabs component, that has several tab buttons. Each button toggles active tab content.
         Add a text input with a button. User can enter any tab index in the input and toggle it by clicking the button.
@@ -12,39 +12,60 @@
         If invalid index is entered - browser must show an alert.
     -->
     <section class="tabs-component">
-        <div class="tabs-component__inputs">
-            <input
-            class="tabs-component__input"
-            type="text"
-            placeholder="Enter tab index">
-            <button
-            class="tabs-component__button">Change tab</button>
-        </div>
+      <div class="tabs-component__inputs">
+        <input
+          class="tabs-component__input"
+          type="number"
+          name="index"
+          step="1"
+          min="0"
+          placeholder="Enter tab index"
+        />
+        <button class="tabs-component__button">Change tab</button>
+      </div>
 
-        <div class="tabs-component__tabs">
-            <span class="tabs-component__item active">Positive</span>
-            <span
-            class="tabs-component__item">Negative</span>
-            <span
-            class="tabs-component__item">Neutral</span>
-        </div>
+      <div class="tabs-component__tabs">
+        <span class="tabs-component__item active">Positive</span>
+        <span class="tabs-component__item">Negative</span>
+        <span class="tabs-component__item">Neutral</span>
+      </div>
 
-        <div class="tabs-component__content">
-            <span class="content item-positive">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore magnam earum eos natus laudantium soluta eveniet at, quos aperiam perspiciatis.
-
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum qui id possimus aut officia placeat explicabo molestias dolorum consequuntur temporibus quis repellat in velit laboriosam voluptatem, quam tenetur corporis deserunt!
-                </p>
-            </span>
-            <span class="content item-negative">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae maxime ad eveniet voluptatum odio earum iure dolore reiciendis nesciunt nobis error ex id nihil, eligendi sequi quaerat provident. Esse, blanditiis. Odio quam adipisci ullam consequatur nemo magni doloribus dolorem minima?</p>
-            </span>
-            <span class="content item-neutral">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus repudiandae deleniti architecto ipsum, nisi error, ducimus nostrum, dolorem ullam ea fugiat explicabo tempora maiores numquam vero totam voluptate iure accusantium cumque vel rerum. Labore quasi impedit, unde nam, dolore quaerat accusamus libero, dolor eum cum magnam rem praesentium porro possimus eius earum! Ullam, quasi natus dolorem eos laboriosam enim dignissimos vel vero deleniti id! Ipsa tempora dolores necessitatibus veritatis sapiente nobis obcaecati mollitia velit odit excepturi hic beatae, corporis corrupti.</p>
-            </span>
-        </div>
+      <div class="tabs-component__content">
+        <span class="content item-positive">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+            magnam earum eos natus laudantium soluta eveniet at, quos aperiam
+            perspiciatis. Lorem ipsum dolor, sit amet consectetur adipisicing
+            elit. Eum qui id possimus aut officia placeat explicabo molestias
+            dolorum consequuntur temporibus quis repellat in velit laboriosam
+            voluptatem, quam tenetur corporis deserunt!
+          </p>
+        </span>
+        <span class="content item-negative">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+            maxime ad eveniet voluptatum odio earum iure dolore reiciendis
+            nesciunt nobis error ex id nihil, eligendi sequi quaerat provident.
+            Esse, blanditiis. Odio quam adipisci ullam consequatur nemo magni
+            doloribus dolorem minima?
+          </p>
+        </span>
+        <span class="content item-neutral">
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus
+            repudiandae deleniti architecto ipsum, nisi error, ducimus nostrum,
+            dolorem ullam ea fugiat explicabo tempora maiores numquam vero totam
+            voluptate iure accusantium cumque vel rerum. Labore quasi impedit,
+            unde nam, dolore quaerat accusamus libero, dolor eum cum magnam rem
+            praesentium porro possimus eius earum! Ullam, quasi natus dolorem
+            eos laboriosam enim dignissimos vel vero deleniti id! Ipsa tempora
+            dolores necessitatibus veritatis sapiente nobis obcaecati mollitia
+            velit odit excepturi hic beatae, corporis corrupti.
+          </p>
+        </span>
+      </div>
     </section>
-    
+
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
