@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.posts-component__img {
+    display: none;
+}
+
+.posts-component__article {
+    /* display: flex; */
+    margin-bottom: 2.5rem;
+}
+
+.posts-component__article-date {
+    color: lightslategrey;
+    font-weight: bold;
+}
+
+.posts-component__text {
+    font-size: 0.75rem;
+}
+
+@media screen and (min-width: 768px) {
+    .posts-component {
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 2rem;
+        max-width: 968px;
+    }
+
+    .posts-component__img {
+        display: inline;
+        width: 100%;
+    }
+
+    .posts-component__article {
+        /* display: flex; */
+        /* width: 33.33% */
+    }
+}
