@@ -3,52 +3,8 @@ body {
   padding: 1rem;
 }
 
-.posts-component__img {
-  display: block;
-  width: 100%;
-  margin-bottom: 1rem;
-}
-
-.posts-component__article-date {
-  color: lightslategrey;
-  font-weight: bold;
-  font-size: 0.75rem;
-  margin-bottom: 0.5rem;
-}
-
-.posts-component__heading {
-  font-size: 1.25rem;
-  margin: 0;
-}
-
-.posts-component__article {
-  /* display: flex; */
-  margin-bottom: 3rem;
-}
-
-.posts-component__text {
-  font-family: IBM Plex Sans, -apple-system, BlinkMacSystemFont, Segoe UI,
-    Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji,
-    Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
-  color: #2d3748;
-  font-size: 1rem;
-  line-height: 1.5;
-}
-
 /* 
-      setting breakpoints for when the screen size is expanded
-  */
-
+    styles for when we start getting into desktop size
+*/
 @media screen and (min-width: 768px) {
-  .posts-component {
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 2rem;
-    max-width: 1200px;
-  }
-
-  .posts-component__img {
-    width: 100%;
-  }
 }
