@@ -14,10 +14,41 @@ body {
 
 .modal__trigger {
     color: white;
-    background-color: #B56827;
+    background-color: #DF8A38;
     border: none;
     padding: .6rem 1.5rem;
     border-radius: 1rem;
     outline: 0;
     cursor: pointer;
+}
+
+.modal__overlay {
+    display: none;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #000000;
+    position: absolute;
+    z-index: 500;
+    opacity: 0.8;
+    /* using display of flex will not work in ie11 */
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+}
+
+.modal__content {
+    background-color: white;
+    color: black;
+    max-height: 75%;
+    max-width: 820px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: .5rem;
+}
+
+.shown {
+    display: flex;
 }
