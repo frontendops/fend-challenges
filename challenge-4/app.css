@@ -1,0 +1,44 @@
+body {
+    background-color: #282c34;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: grid;
+    max-width: 1200px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 1rem;
+    padding: 1em;
+    margin: 0 auto
+}
+
+.video__container {
+    background-color: #eeeeee;
+    grid-column: span 8;
+    height: 400px;
+}
+
+.list__container {
+    grid-column: span 4;
+}
+
+.list__side-list {
+    padding: 0;
+}
+
+.list__item {
+    list-style-type: none;
+    padding: .5rem;
+    border: 1px solid white;
+    margin-bottom: .5rem;
+    display: flex;
+    cursor: pointer;
+}
+
+.list__item-contents {
+    display: flex;
+    margin-left: .5rem;
+    align-items: center;
+    flex-direction: column;
+}
