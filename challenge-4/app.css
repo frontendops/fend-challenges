@@ -13,6 +13,10 @@ body {
     margin: 0 auto
 }
 
+.add-video {
+    color: white;
+}
+
 .video__container {
     background-color: #eeeeee;
     grid-column: span 8;
