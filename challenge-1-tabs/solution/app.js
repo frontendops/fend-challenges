@@ -18,7 +18,7 @@ tabs.addEventListener('click', (e) => {
             break;
     }
 })
-
+// need to toggle the aria-hidden attributes
 function showTabContent(tabContent, tabButton) {
     let tabsCopy = [...allTabs]
     tabsCopy.forEach(tab => {
@@ -36,7 +36,7 @@ function changeCurrentTab(tabButton) {
     tabButton.classList.add('active')
 }
 
-// function gets invoced on render
+// function gets invoked on render
 (function start() {
     allTabs[0].classList.add('content-active')
 })()

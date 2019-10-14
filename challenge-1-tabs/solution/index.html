@@ -20,28 +20,29 @@
             <button
             class="tabs-component__button">Change tab</button>
         </div>
-
-        <div class="tabs-component__tabs">
-            <span class="tabs-component__item active">Positive</span>
+            <!-- since we are not using semantic elements we apply aria-roles to specify
+                How a screen reader would interact with the elements
+            -->
+        <div class="tabs-component__tabs" role="tablist">
+            <span class="tabs-component__item active" role="tab">Positive</span>
             <span
-            class="tabs-component__item">Negative</span>
+            class="tabs-component__item" role="tab">Negative</span>
             <span
-            class="tabs-component__item">Neutral</span>
+            class="tabs-component__item" role="tab">Neutral</span>
         </div>
 
         <div class="tabs-component__content">
-            <span class="content item-positive">
+            <div class="content item-positive" role="tabpanel">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore magnam earum eos natus laudantium soluta eveniet at, quos aperiam perspiciatis.
-
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum qui id possimus aut officia placeat explicabo molestias dolorum consequuntur temporibus quis repellat in velit laboriosam voluptatem, quam tenetur corporis deserunt!
                 </p>
-            </span>
-            <span class="content item-negative">
+            </div>
+            <div class="content item-negative" role="tabpanel">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae maxime ad eveniet voluptatum odio earum iure dolore reiciendis nesciunt nobis error ex id nihil, eligendi sequi quaerat provident. Esse, blanditiis. Odio quam adipisci ullam consequatur nemo magni doloribus dolorem minima?</p>
-            </span>
-            <span class="content item-neutral">
+            </div>
+            <div class="content item-neutral" role="tabpanel">
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus repudiandae deleniti architecto ipsum, nisi error, ducimus nostrum, dolorem ullam ea fugiat explicabo tempora maiores numquam vero totam voluptate iure accusantium cumque vel rerum. Labore quasi impedit, unde nam, dolore quaerat accusamus libero, dolor eum cum magnam rem praesentium porro possimus eius earum! Ullam, quasi natus dolorem eos laboriosam enim dignissimos vel vero deleniti id! Ipsa tempora dolores necessitatibus veritatis sapiente nobis obcaecati mollitia velit odit excepturi hic beatae, corporis corrupti.</p>
-            </span>
+            </div>
         </div>
     </section>
     
