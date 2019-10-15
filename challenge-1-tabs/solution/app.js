@@ -1,4 +1,5 @@
 const tabs = document.querySelector(".tabs-component__tabs");
+const tabButtons = document.querySelectorAll(".tabs-component__item");
 const positiveTab = document.querySelector(".item-positive");
 const negativeTab = document.querySelector(".item-negative");
 const neutralTab = document.querySelector(".item-neutral");
@@ -23,6 +24,7 @@ tabs.addEventListener("click", e => {
 
 tabSwitch.addEventListener("input", e => {
   currentTabIndex.innerHTML = e.target.value;
+  showTabContent(allTabs[e.target.value], tabButtons[e.target.value]);
 });
 // need to toggle the aria-hidden attributes
 function showTabContent(tabContent, tabButton) {
