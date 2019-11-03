@@ -1,6 +1,14 @@
 const videoList = document.querySelector('.list__side-list')
 const videoItem = document.querySelectorAll('.list__item')
 const addVideoBtn = document.querySelector('.add-video')
+const submitVideoBtn = document.querySelector('.video__form-submit')
+const videoTitle = document.querySelector('.video__form-title')
+const videoDescription = document.querySelector('.video__form-description')
+
+let videoInfo = {
+    title: '',
+    description: ''
+}
 
 let videoNum = 5
 
@@ -10,10 +18,18 @@ const classNameArr = [
     'list__item'
 ]
 
+submitVideoBtn.addEventListener('click', (e) => {
+    e.preventDefault()
+    console.log('clicked');
+    videoInfo.title = videoTitle.value
+    videoInfo.description = videoDescription.value
+    createVideo(videoInfo)
+})
+
 videoList.addEventListener('click', (e) => {
     const className = e.target.className
     if (classNameArr.includes(className)) {
-        console.log('clicked on valid emelent')
+        // something needs to happen here
     }
 })
 
@@ -32,3 +48,15 @@ addVideoBtn.addEventListener('click', () => {
     video.appendChild(content)
     videoNum++
 })
+
+function createVideo(videoData) {
+    const { title, description } = videoData
+    document.querySelector('.video__title').innerHTML = title
+    document.querySelector('.video__description').innerHTML = description
+}
+
+function chooseVideo(videoData) {
+    const { title, description } = videoData
+    document.querySelector('.video__title').innerHTML = title
+    document.querySelector('.video__description').innerHTML = description
+}

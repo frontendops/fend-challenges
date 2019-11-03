@@ -11,3 +11,11 @@ The html and css is setup for you to only need to add code to the app.js file
 2. save title and description values  
 
 3. clicking on the video should show that picture in the video box. video title and description
+
+lessons learned
+
+- rendering elements (adding to list)
+
+- saving form data
+
+- adding data onto the web page
