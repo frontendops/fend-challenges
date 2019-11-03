@@ -17,6 +17,10 @@ body {
     color: white;
 }
 
+.video {
+    grid-column: span 8;
+}
+
 .video__container {
     background-color: #eeeeee;
     grid-column: span 8;
