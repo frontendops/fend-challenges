@@ -14,11 +14,22 @@
         <!-- select individual list item with event listeners -->
         <!-- selecting a video will display its name -->
         <h2>VueTube</h2>
-        <button class="add-video">Upload video</button>
         <div class="container">
-            <div class="video__container">
-                <video src="https://www.youtube.com/watch?v=12o3Zgupu_8&t=14s"></video>
+
+            <div class="video">
+                <div class="video__container">
+                    <video src="https://www.youtube.com/watch?v=12o3Zgupu_8&t=14s"></video>
+                </div>
+                <h2 class="video__title"></h2>
+                <p class="video__description"></p>
+                <button class="add-video">Upload video</button>
+                <form class="video__form">
+                    <input class="video__form-title" placeholder="video title" type="text">
+                    <textarea class="video__form-description" name="description" class="video__description" cols="30" rows="10"></textarea>
+                    <input class="video__form-submit" type="submit" value="save">
+                </form>
             </div>
+           
             <div class="list__container">
                 <ul class="list__side-list">
                     <li class="list__item">

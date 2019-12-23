@@ -17,6 +17,15 @@ body {
     color: white;
 }
 
+.video {
+    grid-column: span 8;
+}
+
+.video__form {
+    display: flex;
+    flex-direction: column;
+}
+
 .video__container {
     background-color: #eeeeee;
     grid-column: span 8;
