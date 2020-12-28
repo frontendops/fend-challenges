@@ -7,6 +7,8 @@ Solutions for each project are in the /solutions directory
 
 ### Challenge 1 - Responsive blog posts
 
-### Challenge 2
+### Challenge 2 - Tabs Component
 
-### Challenge 3
+### Challenge 3 - Modal Component
+
+### Challenge 4 - Video Component
